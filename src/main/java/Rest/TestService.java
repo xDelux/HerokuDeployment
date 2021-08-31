@@ -1,3 +1,5 @@
+package Rest;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -14,13 +16,6 @@ public class TestService {
     @GET
     public String getTest(){
         return "Hello World";
-    }
-
-    @Path("json")
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Hello getHelloJson(){
-        return new Hello();
     }
 
     @Path("mysql")
